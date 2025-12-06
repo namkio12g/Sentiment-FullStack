@@ -1,0 +1,56 @@
+================================================================================
+                    QUICK START GUIDE
+================================================================================
+
+REQUIREMENTS (Cần cài đặt trước):
+----------------------------------
+1. Python 3.8+ (khuyến nghị: Python 3.11+)
+   - Download: https://www.python.org/downloads/
+   - Kiểm tra: python --version
+
+2. Node.js 18+ và npm
+   - Download: https://nodejs.org/
+   - Kiểm tra: node --version và npm --version
+
+3. Git (để clone project)
+   - Download: https://git-scm.com/downloads
+
+================================================================================
+                        CÁCH CHẠY
+================================================================================
+
+BƯỚC 1: Cài đặt Backend (Python)
+---------------------------------
+cd backend
+pip install -r requirements.txt
+
+BƯỚC 2: Cài đặt Frontend (Node.js)
+-----------------------------------
+cd frontend/sentimentFE
+npm install
+
+BƯỚC 3: Chạy Backend
+---------------------
+cd backend
+uvicorn src.main:app --reload
+
+Backend sẽ chạy tại: http://localhost:8000
+
+BƯỚC 4: Chạy Frontend (Terminal mới)
+-------------------------------------
+cd frontend/sentimentFE
+npm run dev
+
+Frontend sẽ chạy tại: http://localhost:5173
+
+================================================================================
+                        LƯU Ý
+================================================================================
+
+- Phải chạy CẢ HAI backend và frontend cùng lúc
+- Backend chạy ở port 8000
+- Frontend chạy ở port 5173
+- Lần đầu chạy, model sẽ tự động download từ HuggingFace (khoảng 500MB)
+- Database sẽ tự động tạo khi chạy backend lần đầu
+
+================================================================================
