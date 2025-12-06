@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  /* Pastel Color Palette */
+  --color-pastel-lavender: #e6e6fa;
+  --color-pastel-peach: #ffdab9;
+  --color-pastel-mint: #f0fff0;
+  --color-pastel-navy: #4a5568;
+  --color-pastel-gray: #718096;
+  --color-pastel-border: #e2e8f0;
+  --color-pastel-green: #c6f6d5;
+  --color-pastel-pink: #fed7d7;
+  --color-pastel-blue: #bee3f8;
+  --color-pastel-purple: #e9d8fd;
+  --color-pastel-cream: #fffaf0;
+  --color-pastel-pink-dark: #c53030;
+}
+
+/* Utility classes for pastel colors */
+.bg-pastel-lavender { background-color: var(--color-pastel-lavender); }
+.bg-pastel-peach { background-color: var(--color-pastel-peach); }
+.bg-pastel-mint { background-color: var(--color-pastel-mint); }
+.text-pastel-navy { color: var(--color-pastel-navy); }
+.text-pastel-gray { color: var(--color-pastel-gray); }
+.border-pastel-border { border-color: var(--color-pastel-border); }
+.bg-pastel-green { background-color: var(--color-pastel-green); }
+.bg-pastel-pink { background-color: var(--color-pastel-pink); }
+.bg-pastel-blue { background-color: var(--color-pastel-blue); }
+.bg-pastel-purple { background-color: var(--color-pastel-purple); }
+.bg-pastel-cream { background-color: var(--color-pastel-cream); }
+.text-pastel-pink-dark { color: var(--color-pastel-pink-dark); }
+.text-green-800 { color: #166534; }
+.text-pink-800 { color: #9f1239; }
+.text-blue-800 { color: #1e40af; }
+.text-purple-800 { color: #6b21a8; }
+.border-green-300 { border-color: #86efac; }
+.border-pink-300 { border-color: #f9a8d4; }
+.border-blue-300 { border-color: #93c5fd; }
+.border-purple-300 { border-color: #c084fc; }
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
